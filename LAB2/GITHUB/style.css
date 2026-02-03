@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #24292f;
+}
+
+.main {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.main h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.main p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    color: #57606a;
+}
+
+.button {
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.primary {
+    background: #2da44e;
+    color: #fff;
+    border: none;
+}
+
+.outline {
+    background: transparent;
+    border: 1px solid #d0d7de;
+    color: #24292f;
+}
+
+.link {
+    background: none;
+    border: none;
+    color: #0969da;
+}
+
+.pricing {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding: 40px 20px 80px;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    position: relative;
+}
+
+.featured {
+    border-color: #2da44e;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2da44e;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+.text {
+    margin: 12px 0;
+    color: #57606a;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+.small {
+    font-size: 14px;
+    color: #57606a;
+}
+
+.addons {
+    max-width: 1100px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.addons h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.addon-card {
+    border: 1px solid #d0d7de;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.addon-card h3 {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .addons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}
