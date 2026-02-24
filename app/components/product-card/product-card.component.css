@@ -1,0 +1,48 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
+.card-layout {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.image-section {
+  flex: 0 0 40%; /* Image takes about 40% width */
+  text-align: center;
+}
+
+.main-image {
+  width: 100%; /* Full width of its section */
+  max-width: 150px; /* Limit max size */
+  object-fit: cover;
+}
+
+.text-section {
+  flex: 1;
+  padding-left: 15px; /* Space between image and text */
+  text-align: left;
+}
+
+.price {
+  font-weight: bold;
+  color: green;
+}
+
+.rating {
+  color: orange;
+}
+
+.share-buttons button {
+  margin: 5px;
+}
+
+.gallery-buttons {
+  margin-top: 10px;
+}
