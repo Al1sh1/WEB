@@ -1,0 +1,63 @@
+<div class="photos-page">
+
+  <button class="btn-back" (click)="goBack()">← Back to Artist</button>
+
+  <!-- Loading -->
+  <div *ngIf="loading" class="loading">
+    <div class="spinner"></div>
+    <p>Loading tracks...</p>
+  </div>
+
+  <!-- Error -->
+  <div *ngIf="error && !loading" class="error-msg">⚠️ {{ error }}</div>
+
+  <!-- Artist profile + tracks -->
+  <div *ngIf="!loading && !error && allPhotos.length > 0">
+
+    <!-- Artist banner -->
+    <div class="artist-banner">
+      <div class="artist-photo-wrapper">
+        <img [src]="allPhotos[0].thumbnailUrl" [alt]="allPhotos[0].title" class="artist-photo" />
+        <div class="artist-gradient"></div>
+      </div>
+      <div class="artist-info">
+        <span class="verified-badge">✔ Verified Artist</span>
+        <h1 class="artist-name">{{ allPhotos[0].title }}</h1>
+      </div>
+    </div>
+
+    <!-- Top tracks section -->
+    <div class="tracks-section">
+      <h2 class="tracks-heading">🎵 Popular</h2>
+
+      <div class="track-list">
+        <div *ngFor="let track of allPhotos.slice(1); let i = index" class="track-row" [class.playing]="i === 0">
+
+          <span class="track-number">{{ i + 1 }}</span>
+
+          <div class="track-cover">
+            <img [src]="track.thumbnailUrl" [alt]="track.title" />
+            <div class="track-play-btn">{{ i === 0 ? '🔊' : '▶' }}</div>
+          </div>
+
+          <div class="track-info">
+            <span class="track-title" [class.track-title-active]="i === 0">{{ track.title }}</span>
+          </div>
+
+          <div class="track-actions">
+            <span class="track-heart">♡</span>
+            <span class="track-duration">3:{{ (30 + i * 13) % 60 | number:'2.0-0' }}</span>
+            <span class="track-ellipsis">⋯</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Empty state -->
+  <div *ngIf="!loading && !error && allPhotos.length === 0" class="empty-state">
+    <p>No tracks found for this artist.</p>
+  </div>
+
+</div>

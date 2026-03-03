@@ -1,0 +1,42 @@
+<div class="albums-page">
+  <div class="albums-header">
+    <h1>🎧 Top Artists</h1>
+    <span *ngIf="!loading" class="albums-count">
+      {{ allAlbums.length }} artists · Page {{ currentPage }} of {{ totalPages }}
+    </span>
+  </div>
+
+  <!-- Loading spinner -->
+  <div *ngIf="loading" class="loading">
+    <div class="spinner"></div>
+    <p>Loading artists...</p>
+  </div>
+
+  <!-- Error -->
+  <div *ngIf="error" class="error-msg">{{ error }}</div>
+
+  <!-- Album list -->
+  <div *ngIf="!loading && !error" class="albums-list">
+    <div *ngFor="let album of visibleAlbums" class="album-row" (click)="goToDetail(album.id)">
+      <span class="album-id">#{{ album.id }}</span>
+      <span class="album-title">{{ album.title }}</span>
+      <button class="btn-delete" (click)="deleteAlbum($event, album.id)">
+        🗑️ Delete
+      </button>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div *ngIf="!loading && !error && totalPages > 1" class="pagination">
+    <button class="page-btn" (click)="goToPage(1)" [disabled]="currentPage === 1">«</button>
+    <button class="page-btn" (click)="goToPage(currentPage - 1)" [disabled]="currentPage === 1">‹</button>
+
+    <button *ngFor="let p of pages" class="page-btn" [class.active]="p === currentPage" (click)="goToPage(p)">
+      {{ p }}
+    </button>
+
+    <button class="page-btn" (click)="goToPage(currentPage + 1)" [disabled]="currentPage === totalPages">›</button>
+    <button class="page-btn" (click)="goToPage(totalPages)" [disabled]="currentPage === totalPages">»</button>
+  </div>
+
+</div>
