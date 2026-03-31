@@ -1,0 +1,30 @@
+[
+  {"model":"api.category","pk":1,"fields":{"name":"Smartphones"}},
+  {"model":"api.category","pk":2,"fields":{"name":"Laptops"}},
+  {"model":"api.category","pk":3,"fields":{"name":"Headphones"}},
+  {"model":"api.category","pk":4,"fields":{"name":"Tablets"}},
+
+  {"model":"api.product","pk":1, "fields":{"name":"iPhone 16 Pro Max",       "price":719990,"description":"Apple flagship with A18 Pro chip and titanium design. Features a 6.9 inch Super Retina XDR display with ProMotion. Professional camera system with 5x optical zoom.","count":15,"is_active":true,"category":1}},
+  {"model":"api.product","pk":2, "fields":{"name":"iPhone 15 Pro",            "price":649990,"description":"Pro-grade Apple smartphone with action button and A17 Pro chip. Crafted from titanium for a lighter premium feel. Supports USB-C with USB 3 speeds.","count":20,"is_active":true,"category":1}},
+  {"model":"api.product","pk":3, "fields":{"name":"Samsung Galaxy S24",       "price":500000,"description":"Samsung flagship with Galaxy AI and a brilliant 6.7 inch Dynamic AMOLED display. Powered by Snapdragon 8 Gen 3 for lightning-fast performance.","count":18,"is_active":true,"category":1}},
+  {"model":"api.product","pk":4, "fields":{"name":"POCO F7 Pro",              "price":249990,"description":"High-performance mid-range phone focused on gaming and speed. Snapdragon 8 Gen 3 chip with a 6.67 inch 144 Hz AMOLED display.","count":25,"is_active":true,"category":1}},
+  {"model":"api.product","pk":5, "fields":{"name":"Xiaomi Redmi Note 14 Pro", "price":149990,"description":"Budget champion with a large 5500 mAh battery and capable cameras. 200 MP main sensor delivers stunning detail in photos.","count":30,"is_active":true,"category":1}},
+
+  {"model":"api.product","pk":6, "fields":{"name":"Apple MacBook Air M3",    "price":699990,"description":"Ultra-thin laptop powered by Apple M3 chip with all-day 18-hour battery life. Stunning 15.3 inch Liquid Retina display with 500 nits brightness.","count":10,"is_active":true,"category":2}},
+  {"model":"api.product","pk":7, "fields":{"name":"ASUS VivoBook 15",         "price":279990,"description":"Slim everyday laptop with AMD Ryzen processor and a Full HD display. Lightweight design at just 1.7 kg perfect for students.","count":12,"is_active":true,"category":2}},
+  {"model":"api.product","pk":8, "fields":{"name":"Lenovo IdeaPad 3",         "price":219990,"description":"Reliable student laptop with Intel Core processor and ample storage. Narrow bezels maximize the 15.6 inch screen real estate.","count":14,"is_active":true,"category":2}},
+  {"model":"api.product","pk":9, "fields":{"name":"HP Pavilion 15",           "price":349990,"description":"Stylish HP laptop with dedicated AMD Radeon graphics for light gaming. Micro-edge display with thin bezels on all four sides.","count":8, "is_active":true,"category":2}},
+  {"model":"api.product","pk":10,"fields":{"name":"Acer Aspire 5",            "price":259990,"description":"Well-rounded laptop for everyday productivity and study. Vibrant 14 inch IPS display with wide viewing angles.","count":11,"is_active":true,"category":2}},
+
+  {"model":"api.product","pk":11,"fields":{"name":"Sony WH-1000XM5",         "price":189990,"description":"Industry-leading noise-cancelling over-ear headphones with 30-hour battery. Eight microphones deliver exceptional ANC performance.","count":20,"is_active":true,"category":3}},
+  {"model":"api.product","pk":12,"fields":{"name":"Apple AirPods Pro 2",      "price":149990,"description":"Adaptive audio and top-tier ANC in compact earbuds with H2 chip. Personalized Spatial Audio creates an immersive 3D sound experience.","count":25,"is_active":true,"category":3}},
+  {"model":"api.product","pk":13,"fields":{"name":"JBL Tune 770NC",           "price":49990, "description":"Comfortable wireless headphones with active noise cancelling and 70-hour battery. Adaptive ANC automatically adjusts to your surroundings.","count":35,"is_active":true,"category":3}},
+  {"model":"api.product","pk":14,"fields":{"name":"Samsung Galaxy Buds2 Pro", "price":89990, "description":"Premium earbuds with Hi-Fi 24-bit audio and a compact ergonomic design. Intelligent ANC blocks up to 97 percent of background noise.","count":22,"is_active":true,"category":3}},
+  {"model":"api.product","pk":15,"fields":{"name":"Xiaomi Redmi Buds 5 Pro",  "price":29990, "description":"Budget ANC earbuds with an impressive 43 dB noise reduction rating. Three microphones per earbud ensure crystal-clear call quality.","count":40,"is_active":true,"category":3}},
+
+  {"model":"api.product","pk":16,"fields":{"name":"Apple iPad Air M2",        "price":449990,"description":"Powerful tablet with M2 chip perfect for creative work and study. Stunning 11 inch Liquid Retina display with True Tone and P3 wide color.","count":9, "is_active":true,"category":4}},
+  {"model":"api.product","pk":17,"fields":{"name":"Samsung Galaxy Tab S9",    "price":349990,"description":"Premium Android tablet with a vivid AMOLED display and included S Pen. IP68 water and dust resistance for worry-free use anywhere.","count":11,"is_active":true,"category":4}},
+  {"model":"api.product","pk":18,"fields":{"name":"Xiaomi Pad 6",             "price":169990,"description":"High-performance tablet with Snapdragon 870 and a 144 Hz display. Large 8840 mAh battery keeps you going through full workdays.","count":16,"is_active":true,"category":4}},
+  {"model":"api.product","pk":19,"fields":{"name":"Lenovo Tab P12",           "price":129990,"description":"Versatile large-screen tablet for entertainment and productivity tasks. Massive 12.7 inch display is ideal for movies reading and video calls.","count":13,"is_active":true,"category":4}},
+  {"model":"api.product","pk":20,"fields":{"name":"Huawei MatePad 11.5",      "price":149990,"description":"Stunning 11.5 inch PaperMatte display tablet ideal for studying and media. Anti-glare matte screen dramatically reduces eye strain during long sessions.","count":10,"is_active":true,"category":4}}
+]
